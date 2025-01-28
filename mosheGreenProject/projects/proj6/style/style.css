@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Heebo', sans-serif;
+    background: #FFFFFF; 
+}
+
+.icon1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0px 3px 6px #00000029;
+    background: #FDBD03;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;  
+    justify-content: center;  
+    align-items: center; 
+    padding: 12px;
+}
+
+.icon1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon1:hover {
+    transform: scale(1.1);
+}
+
+.top-rectangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #FDBD03;
+    width: 22%;
+    height: 15px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+}
+
+.container img {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    left: 200px;
+    top: 50px;
+    object-fit: cover;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    left: 80px;
+}
+
+.form-container h1 {
+    font-size: 36px;
+    width: 100%;
+    color: #FDBD03;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    font-size: 16px;
+    color: #020253;
+    margin-bottom: 20px;
+}
+
+.form-container textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 1em;
+    background-color: #E5EEFF;
+    resize: none;
+    border: 1px solid #E5EEFF;
+    border-bottom: 3px solid #FDBD03;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-container label {
+    font-size: 1em;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #E5EEFF;
+    font-size: 1em;
+    border-bottom: 3px solid #FDBD03;
+    font-weight: bold;
+    background-color: #E5EEFF;
+}
+
+.form-container button {
+    width: 25%;
+    padding: 10px;
+    background-color: #FDBD03;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    font-family: heebo;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+}
+
+.form-container button:hover {
+    transform: scale(1.1);
+}
+
+#footer {
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+    gap: 30px;
+    background: #FFFFFF;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#footer img {
+    box-shadow: 0px 3px 6px #00000029;
+    background: #FDBD03;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 15px;
+    position: relative;
+    left: 20px;
+}
+
+#footer img:hover {
+    transform: scale(1.1);
+}
+
+.bottom-rectangle {
+    width: 55%;
+    height: 15px;
+    background: #FDBD03;
+    position: fixed;
+    bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .container img {
+        width: 40%;
+        height: auto;
+        margin: 0 auto 20px;
+        position: static;
+    }
+
+    .form-container {
+        left: 0;
+        width: 90%;
+        max-width: none;
+    }
+
+    .icon1 {
+        display: none;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form-row label {
+    text-align: right; 
+    margin-bottom: 5px; 
+    display: inline-block; 
+    }
+
+    .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-bottom: 10px;
+}
+
+    .textarea-label {
+        text-align: right;
+        margin-bottom: 5px; 
+    }
+
+    .text button {
+        margin-top: 15px;
+        padding: 10px 10px;
+    }
+
+    .top-rectangle {
+        width: 80%;
+    }
+
+    .form-row input {
+        margin-bottom: 10px;
+    }
+
+    .bottom-rectangle {
+        width: 100%;
+    }
+
+    .form-container button {
+        width: 100%;
+        top: 0;
+    }
+
+    #footer img {
+    box-shadow: 0px 3px 6px #00000029;
+    background: #FDBD03;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 15px;
+    position: relative;
+    left: 20px;
+    margin-bottom: 30px;
+    }
+    
+    #footer {
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+    gap: 30px;
+    background: #FFFFFF;
+    padding: 20px;
+    margin-top: 50px;
+}
+}
+
+
+@media (max-width: 420px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .icon1{
+        display: none;
+    }
+
+    .container img {
+        width: 25%;
+        height: auto;
+        margin: 0 auto 50px;
+        position: relative;
+        left: 0;
+    }
+
+    .form-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-row {
+    display: flex;
+    flex-direction: column; 
+    }
+
+    .form-row label {
+    text-align: right; 
+    margin-bottom: 5px; 
+    display: inline-block; 
+    }
+
+    .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-bottom: 10px;
+}
+
+    .textarea-label {
+        text-align: right;
+        margin-bottom: 5px; 
+    }
+
+    .text label {
+        font-size: 12px; 
+    }
+
+    .text button {
+        margin-top: 15px;
+        padding: 10px 10px;
+    }
+
+    .text textarea {
+        width: 100%;
+        padding: 5px;
+    }
+
+
+    .top-rectangle {
+        width: 85%;
+    }
+
+    .form-row input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+
+    .form-row label {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    .bottom-rectangle {
+        width: 100%;
+    }
+
+    .text button {
+        width: 100%;
+        margin-top: 15px;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+}
+
+    .text button:hover {
+        background-color: #0056b3; 
+    }
+
+    #footer img {
+    box-shadow: 0px 3px 6px #00000029;
+    background: #FDBD03;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 15px;
+    position: relative;
+    left: 20px;
+    margin-bottom: 30px;
+    }
+}
+
+
+
+
+

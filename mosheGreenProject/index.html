@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <section class="container">
+        <nav>
+            <h1>
+                <img src="./images/mainImage.jpg" alt="Logo" class="logo">
+                Moshe Green
+            </h1>
+            <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
+            <label for="hamburger-toggle" class="hamburger">&#9776;</label>
+            <ul class="hamburger-menu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="Home">
+            <div class="info-box">
+                <div class="content">
+                    <h2>Hey!<br> I am a Web Developer</h2>
+                    <p>Welcome to my personal portfolio page!</p>
+                    <p>Here you can find information about me and my projects</p>
+                </div>
+                <div class="icons">
+                    <img src="./images/HTML5_Logo.svg" alt="Icon 1" class="icon1">
+                    <img src="./images/CSS_LOGO.svg" alt="Icon 2" class="icon2">
+                </div>
+            </div>
+        </section>
+
+        <section id="About">
+            <div class="about-me">
+                <div class="me">
+                    <img src="./images/me.jpg" alt="Portrait of Moshe Green, Fullstack web Developer" class="me-image">
+                    <h2>About Me</h2>
+                    <p>
+                        My name is Moshe Green and I am a fullstack web developer.
+                        This is my first website that I have created from scratch.
+                        I have experience in HTML, CSS, and C language programing.
+                        I am passionate about web development and I am always looking for new challenges.<br>
+                        <a href="./ resume.pdf"
+                            download>Download CV</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Gallery">
+            <h2>Leading Projects</h2>
+            <div class="gallery-container">
+                <div class="card project-1"
+                    onclick="window.location.href= 'file:///Users/mg1/Desktop/HACKER%20U/pistacio%20warriors/projects/mosheGreenProject/projects/proj1/proj-page/coffee-proj-page.html'">
+                    <img src="./images/coffee-gallery-img.png" alt="project 1 landing page" class="proj-img">
+                    <h3>Project 1</h3>
+                    <p>A Modern Coffee-Themed Page with Responsive Design, Custom Styling, and RTL Support.</p>
+                    <button>Project Page</button>
+                </div>
+
+                <div class="card project-2"
+                    onclick="window.location.href= 'file:///Users/mg1/Desktop/HACKER%20U/pistacio%20warriors/projects/mosheGreenProject/projects/proj2/proj-page/path15-proj-page.html'">
+                    <img src="./images/proj2pic.png" alt="project 2 landing page" class="proj-img">
+                    <h3>Project 2</h3>
+                    <p>Utilized Flexbox for layout and media queries for responsiveness.</p>
+                    <button>Project Page</button>
+                </div>
+
+                <div class="card project-3"
+                    onclick="window.location.href= 'file:///Users/mg1/Desktop/HACKER%20U/pistacio%20warriors/projects/mosheGreenProject/projects/proj3/proj-page/project3-page.html'">
+                    <img src="./images/proj3-img.png" alt="project 3 landing page" class="proj-img">
+                    <h3>Project 3</h3>
+                    <p>A Responsive Landing Page with Gradient Design, Interactive Forms, and Full RTL Support.</p>
+                    <button>Project Page</button>
+                </div>
+
+                <div class="card project-4"
+                    onclick="window.location.href= 'file:///Users/mg1/Desktop/HACKER%20U/pistacio%20warriors/projects/mosheGreenProject/projects/proj4/proj-page/project4-page.html'">
+                    <img src="./images/proj4-gallery-pic.png" alt="project 4 landing page" class="proj-img">
+                    <h3>Project 4</h3>
+                    <p>A Responsive RTL Landing Page with a Dynamic Hero Section, Accessible Forms, and Custom
+                        Typography.</p>
+                    <button>Project Page</button>
+                </div>
+
+                <div class="card project-5"
+                    onclick="window.location.href = 'file:///Users/mg1/Desktop/HACKER%20U/pistacio%20warriors/projects/mosheGreenProject/projects/proj5/proj-page/proj5-page.html'">
+                    <img src="./images/proj5-gallery-img.png" alt="project 5 landing page" class="proj-img">
+                    <h3>Project 5</h3>
+                    <p>Implemented grid layout and custom CSS animations for a dynamic user experience</p>
+                    <button>Project Page</button>
+                </div>
+
+                <div class="card project-6"
+                    onclick="window.location.href = 'file:///Users/mg1/Desktop/HACKER%20U/pistacio%20warriors/projects/mosheGreenProject/projects/proj6/proj-page/proj6-page.html'">
+                    <img src="./images/proj6-gallery-img.png" alt="project 6 landing page" class="proj-img">
+                    <h3>Project 6</h3>
+                    <p>Responsive Landing Page with Form Integration and Interactive Elements</p>
+                    <button>Project Page</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" placeholder="Your Phone Number" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section id="footer">
+            <img src="./images/facebook-logo.svg" alt="Facebook icon"
+                onclick="window.open('https://www.facebook.com/moikik', '_blank')">
+            <a href="https://wa.me/0528515220" target="_blank"><img src="./images/whatsapp-icon.svg" alt="WhatsApp Icon"></a>
+            <a href="file:///Users/mg1/Desktop/HACKER%20U/pistacio%20warriors/projects/mosheGreenProject/projects/proj6/proj-page/linkedin-placeholder-page.html"
+                target="_blank"><img src="./images/linkedin-icon.svg" alt="LinkedIn Icon"></a>
+            <img src="./images/email-icon.svg" alt="Email icon" onclick="window.open('mailto:m.green4903@gmail.com', '_blank');">
+            <p>&copy; 2025 Moshe Green. All Rights Reserved.</p>
+        </section>
+    </section>
+</body>
+
+</html>
