@@ -150,13 +150,21 @@ function loadLocalItems() {
     let todos = JSON.parse(localStorage.getItem('todos')) || [];
     let shoppings = JSON.parse(localStorage.getItem('shoppings')) || [];
 
-    todos.forEach(todo => {
-        createTodoElement(todo.text, todo.completed);
-    });
+    if (Array.isArray(todos)) {
+        todos.forEach(todo => {
+            if (todo.text && typeof todo.completed !== 'undefined') {
+                createTodoElement(todo.text, todo.completed);
+            }
+        });
+    }
 
-    shoppings.forEach(shopping => {
-        createShoppingElement(shopping.text, shopping.completed);
-    });
+    if (Array.isArray(shoppings)) {
+        shoppings.forEach(shopping => {
+            if (shopping.text && typeof shopping.completed !== 'undefined') {
+                createShoppingElement(shopping.text, shopping.completed);
+            }
+        });
+    }
 }
 
 document.addEventListener('DOMContentLoaded', loadLocalItems);
