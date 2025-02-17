@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Math Quiz</title>
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>Math Quiz</h1>
+
+        <div id="topic-selection">
+            <label for="topics">Choose a Topic:</label>
+            <select id="topics">
+                <option value="simpleArithmetic">Simple Arithmetic</option>
+                <option value="exponentsAndRoots">Exponents & Roots</option>
+                <option value="quadraticFunctions">Quadratic Functions</option>
+            </select>
+            <input type="button" value="Start Quiz" id="startBtn">
+        </div>
+
+        <div id="quiz" style="display: none;">
+            <p id="question"></p>
+            <form id="quizForm">
+                <div id="answerContainer">
+                    <label for="answer">Your Answer:</label>
+                    <input type="text" id="answer" placeholder="Enter your answer">
+                </div>
+                <input type="button" value="Submit" id="btn">
+                <p id="message" style="color: #d32f2f; display: none;">Please provide an answer in fraction form or 3
+                    decimal places when necessary.</p>
+                <p id="score">Correct Answers: 0</p>
+            </form>
+            <p id="feedback"></p>
+            <input type="button" value="Back to Topics" id="backBtn">
+        </div>
+    </div>
+</body>
+
+</html>
